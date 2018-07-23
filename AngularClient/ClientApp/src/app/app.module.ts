@@ -14,14 +14,15 @@ import { UnauthorizedComponent } from './unauthorized/unauthorized.component';
 import { ConfigurationService } from "./configuration/configuration.service";
 // 아래 추가
 import { AuthModule, OidcSecurityService } from 'angular-auth-oidc-client';
-//import { OAuthService, JwksValidationHandler } from 'angular-oauth2-oidc';
+import { OAuthService, JwksValidationHandler } from 'angular-oauth2-oidc';
 import { AuthService } from './services/auth.service';
 import { CallApiComponent } from './call-api/call-api.component';
 
-//import { HttpService } from './services-oauth2/http.service';
-//import { AuthGuard } from './services-oauth2/auth.guard';
 
-//import { TokenInterceptor } from "./services-oauth2/token.interceptor"; 
+
+import { HttpService } from './services-oauth2/http.service';
+import { AuthGuard } from './services-oauth2/auth.guard';
+import { TokenInterceptor } from "./services-oauth2/token.interceptor"; 
 
 // 아래 추가
 const appInitializerFn = (appConfig: ConfigurationService) => {
