@@ -26,17 +26,12 @@
 
   <ItemGroup>
     <None Remove="ClientApp\src\app\callback.html" />
-    <None Remove="ClientApp\src\app\services\oauth2.service.ts" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="ClientApp\src\app\home\callback.html">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-  </ItemGroup>
-
-  <ItemGroup>
-    <TypeScriptCompile Include="ClientApp\src\app\services\oauth2.service.ts" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
