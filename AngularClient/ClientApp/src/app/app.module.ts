@@ -18,7 +18,7 @@ import { AuthService } from './services/auth.service';
 
 import { CallApiComponent } from './call-api/call-api.component';
 
-// 아래 추가
+// 아래 추가 ==== master
 const appInitializerFn = (appConfig: ConfigurationService) => {
   return () => {
     return appConfig.loadConfig();
